@@ -79,12 +79,22 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="mrfanl&#39;s Home">
-<meta property="og:url" content="http://example.com/index.html">
+<meta name="description" content="简书 一、高斯分布&amp;emsp;&amp;emsp;高斯分布（正态分布）是一种非常常见的连续概率分布。其在统计学上十分重要，经常用在自然和社会科学来代表一个不明的随机变量。 高斯分布：若随机变量X服从一个位置参数为$\mu$、尺度参数为$\sigma$的高斯分布，记作：$$X \sim N(\mu,\sigma) \tag{1}$$其概率密度函数为$$f(x) &#x3D; \frac{1}{\sigma \sqrt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="高斯过程回归">
+<meta property="og:url" content="http://example.com/2020/10/25/%E9%AB%98%E6%96%AF%E8%BF%87%E7%A8%8B%E5%9B%9E%E5%BD%92/index.html">
 <meta property="og:site_name" content="mrfanl&#39;s Home">
+<meta property="og:description" content="简书 一、高斯分布&amp;emsp;&amp;emsp;高斯分布（正态分布）是一种非常常见的连续概率分布。其在统计学上十分重要，经常用在自然和社会科学来代表一个不明的随机变量。 高斯分布：若随机变量X服从一个位置参数为$\mu$、尺度参数为$\sigma$的高斯分布，记作：$$X \sim N(\mu,\sigma) \tag{1}$$其概率密度函数为$$f(x) &#x3D; \frac{1}{\sigma \sqrt">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3148087-c8fe9871040e2672.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3148087-c7183771cf127ce0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3148087-6a7bf064df482255.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3148087-cc06676702a155df.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3148087-dbb685ea682bb385.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="article:published_time" content="2020-10-25T13:17:03.000Z">
+<meta property="article:modified_time" content="2020-10-25T13:20:40.492Z">
 <meta property="article:author" content="mrfanl">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/3148087-c8fe9871040e2672.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
@@ -114,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://example.com/"/>
+  <link rel="canonical" href="http://example.com/2020/10/25/高斯过程回归/"/>
 
 
 
 
 
-  <title>mrfanl's Home</title>
+  <title>高斯过程回归 | mrfanl's Home</title>
   
 
 
@@ -139,8 +149,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -213,9 +222,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -245,9 +254,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/10/25/%E9%AB%98%E6%96%AF%E8%BF%87%E7%A8%8B%E5%9B%9E%E5%BD%92/" itemprop="url">高斯过程回归</a></h1>
+          <h1 class="post-title" itemprop="name headline">高斯过程回归</h1>
         
 
         <div class="post-meta">
@@ -297,9 +304,7 @@
       
 
       
-        
-          
-            <p><a href="https://www.jianshu.com/p/acdfd632e989" target="_blank" rel="noopener">简书</a></p>
+        <p><a href="https://www.jianshu.com/p/acdfd632e989" target="_blank" rel="noopener">简书</a></p>
 <h2 id="一、高斯分布"><a href="#一、高斯分布" class="headerlink" title="一、高斯分布"></a>一、高斯分布</h2><p>&emsp;&emsp;高斯分布（正态分布）是一种非常常见的连续概率分布。其在统计学上十分重要，经常用在自然和社会科学来代表一个不明的随机变量。</p>
 <p><strong>高斯分布</strong>：若随机变量<strong>X</strong>服从一个位置参数为$\mu$、尺度参数为$\sigma$的高斯分布，记作：<br>$$<br>X \sim N(\mu,\sigma) \tag{1}<br>$$<br>其概率密度函数为<br>$$<br>f(x) = \frac{1}{\sigma \sqrt{2\pi}}exp(-\frac{(x-\mu)^2}{2\sigma^2})\tag{2}<br>$$<br>高斯分布的<strong>数学期望</strong>为$\mu$,决定了分布的位置；其<strong>方差</strong>为$\sigma$,决定了分布的幅度。<br><img src="https://upload-images.jianshu.io/upload_images/3148087-c8fe9871040e2672.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image-20200517151337311.png"></p>
 <h2 id="二、多维高斯分布"><a href="#二、多维高斯分布" class="headerlink" title="二、多维高斯分布"></a>二、多维高斯分布</h2><h3 id="2-1-一般形式"><a href="#2-1-一般形式" class="headerlink" title="2.1 一般形式"></a>2.1 一般形式</h3><p>&emsp;&emsp;N为随机向量$X=[X_1,X_2,…,X_N]^T$，$X\sim (\mu,\Sigma)$<br>$$<br>f_x(x_1,…,x_n) = \frac{1}{\sqrt{(2\pi)^n|\Sigma|}}exp(-\frac{1}{2}(X-\mu)^T\Sigma^{-1}(X-\mu))\tag{3}<br>$$</p>
@@ -322,8 +327,6 @@
 <p>运行结果：<br><img src="https://upload-images.jianshu.io/upload_images/3148087-dbb685ea682bb385.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
 <h2 id="六、参考"><a href="#六、参考" class="headerlink" title="六、参考"></a>六、参考</h2><p>【1】<a href="https://zhuanlan.zhihu.com/p/139478368" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/139478368</a></p>
 
-          
-        
       
     </div>
     
@@ -340,12 +343,12 @@
       
 
       
+      
+      
 
       
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -355,10 +358,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -366,6 +370,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -386,8 +394,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -429,6 +446,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、高斯分布"><span class="nav-number">1.</span> <span class="nav-text">一、高斯分布</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、多维高斯分布"><span class="nav-number">2.</span> <span class="nav-text">二、多维高斯分布</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-一般形式"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 一般形式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-二维高斯分布"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 二维高斯分布</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、高斯过程"><span class="nav-number">3.</span> <span class="nav-text">三、高斯过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、高斯过程回归"><span class="nav-number">4.</span> <span class="nav-text">四、高斯过程回归</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五、代码"><span class="nav-number">5.</span> <span class="nav-text">五、代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#六、参考"><span class="nav-number">6.</span> <span class="nav-text">六、参考</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -569,6 +602,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
